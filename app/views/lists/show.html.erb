@@ -8,3 +8,6 @@
 <%= image_tag bookmark.movie.poster_url %>
 <%= link_to "Delete", bookmark, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
 <% end %>
+<% if @list.photo.attached? %>
+<%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
+<% end %>

@@ -1,0 +1,18 @@
+.banner {
+	height: 40vh;
+	color: white;
+	background: linear-gradient(135deg,
+								rgba(0, 0, 0, 0.0) 0%,
+								rgba(0, 0, 0, 0.3) 50%),
+                url("banner_med.jpeg");
+	background-size: cover;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+
+  h1 {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+}
