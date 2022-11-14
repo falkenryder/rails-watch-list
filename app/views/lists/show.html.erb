@@ -2,6 +2,9 @@
 <p>Find me in app/views/list/show.html.erb</p>
 <%= @list.name %>
 <% @list.bookmarks.each do |bookmark|%>
-<%= bookmark.movie %>
+<%= bookmark.movie.title %>
+<%= bookmark.movie.overview %>
+<%= bookmark.movie.rating %>
+<%= image_tag bookmark.movie.poster_url %>
 <%= link_to "Delete", bookmark, data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>
 <% end %>
